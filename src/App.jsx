@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './components/Home'
-import DemoPage from './components/Demo'
 import './App.css'
-import ErrorPage from './components/error'
+import ErrorPage from './components/Error'
 
 function App() {
   return (
