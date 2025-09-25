@@ -45,35 +45,35 @@ function DemoPage() {
   };
 
   return (
-    <div style={{ padding: '2rem' }}>
-      <h2>Login Page</h2>
+    <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', height: '60vh', justifyContent: 'center', backgroundColor: '#fff', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
+      <img src="/banner.png" alt="banner" style={{ marginBottom: '1rem', width: '60%', maxWidth: '400px', marginTop: '2rem' }} />
+      <h2 style={{ marginBottom: '1rem', fontSize: '1.4rem', color: 'black' }}>Sign in </h2>
+      <p style={{ marginBottom: '1rem', fontSize: '1rem', color: '#666', marginTop: '1rem' }}>Enter your email and password</p>
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
         <label>
-          Username:
           <input
             type="text"
             name="username"
             value={formData.username}
             onChange={handleChange}
             required
-            style={{ marginBottom: '1rem', padding: '0.5rem' }}
+            style={{ marginBottom: '1rem', padding: '0.5rem', borderRadius: '10px', border: '1px solid #ccc', fontSize: '1rem', width: '100%', boxSizing: 'border-box' , height: '2.5rem' , outline: 'none' , transition: 'border-color 0.3s ease' , color: '#333' , backgroundColor: '#f9f9f9' }}
           />
         </label>
         
         <label>
-          Password:
           <input
             type="password"
             name="password"
             value={formData.password}
             onChange={handleChange}
             required
-            style={{ marginBottom: '1rem', padding: '0.5rem' }}
+            style={{ marginBottom: '1rem', padding: '0.5rem', borderRadius: '10px', border: '1px solid #ccc', fontSize: '1rem', width: '100%', boxSizing: 'border-box' , height: '2.5rem' , outline: 'none' , transition: 'border-color 0.3s ease' , color: '#333' , backgroundColor: '#f9f9f9' }}
           />
         </label>
 
-        <button type="submit" style={{ padding: '0.5rem' }}>
-          Submit
+        <button type="submit" style={{ padding: '0.6rem', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '10px', cursor: 'pointer', fontSize: '1rem' }}>
+          continue
         </button>
       </form>
     </div>

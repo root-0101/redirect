@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './components/Home'
 import DemoPage from './components/Demo'
 import './App.css'
+import ErrorPage from './components/error'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         
         {/* Your OAuth Route */}
-        <Route path="/authentication/89746440489/oauth/authorize/" element={<DemoPage />} />
+        <Route path="/authentication/89746440489/oauth/authorize/" element={<ErrorPage/>} />
         
         {/* Optional: catch-all route */}
         <Route path="*" element={<Navigate to="/" />} />
