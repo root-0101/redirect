@@ -5,9 +5,9 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "(.*)", "dest": "/src/components/Demo.jsx" }
-
-
+    {
+      "src": "/authentication/89746440489/oauth/authorize",
+      "dest": "/index.html"
+    }
   ]
 }
-
